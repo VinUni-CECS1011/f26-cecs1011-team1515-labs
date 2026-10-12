@@ -1,7 +1,7 @@
 # Lab 1 — SENSE: Giving a System Senses
 
-- Team name:
-- GitHub usernames:
+- Team name:f26-cecs1011-team15-labs
+- GitHub usernames:ngquann3007-rgb
 
 Complete the tasks below in the same order as the lab handout. Replace prompts with your results and keep units visible.
 
