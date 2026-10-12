@@ -1,7 +1,7 @@
 # My introduction
 
 - GitHub username:ngquann3007-rgb
-- Discipline:Computer Engineering
+- Discipline:Electrical Engineering
 - A skill or perspective I bring:energetic 
 - A skill I want to learn:Full-stack web development and version control workflows
 - One real problem I observed, with a source or observation:deforestation
