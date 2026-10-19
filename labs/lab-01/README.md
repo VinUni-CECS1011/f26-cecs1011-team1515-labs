@@ -84,7 +84,7 @@ What quantity might our project measure? What decision would it support? What as
 Add one row per member. Include physical, paired, analytical and documentation work as relevant. Each member commits meaningful work using their own account; commit counts are not graded.
 
 | GitHub username | Work completed and result I can explain | Evidence or report section |
-|ngquann3007-rgb | Modify files, submit assignments and measure the resistor  | task 1, 2 |
+| |   | |
 | | | |
 
 ## Sources and AI use
