@@ -84,7 +84,7 @@ What quantity might our project measure? What decision would it support? What as
 Add one row per member. Include physical, paired, analytical and documentation work as relevant. Each member commits meaningful work using their own account; commit counts are not graded.
 
 | GitHub username | Work completed and result I can explain | Evidence or report section |
-| |   | |
+| minhduc108      | time tracker, sensor circuit assembly   | all tasks were done on time, task 4. build a voltage devider |
 | | | |
 
 ## Sources and AI use
