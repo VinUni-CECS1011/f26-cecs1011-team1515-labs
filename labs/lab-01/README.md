@@ -19,27 +19,29 @@ This starter contains no example photos. Insert your team's own evidence. Remove
 
 ### Task 1. Measure a fixed resistor
 
-- Nominal resistance and marked tolerance: The measured resistance was 9.8845 kΩ. The nominal value and marked tolerance of the resistor must be confirmed from the component markings or lab materials.
-- Measured resistance: 9.8845 kΩ.
-- Acceptable range and comparison: If the resistor is rated at 10 kΩ ±5%, its acceptable range is:
-Minimum = 10 × (1 − 0.05) = 9.5 kΩ
-Maximum = 10 × (1 + 0.05) = 10.5 kΩ
-The measured value of 9.8845 kΩ is within this range, provided that the nominal value is 10 kΩ and the tolerance is ±5%.
+- **Nominal resistance and marked tolerance:** The measured resistance was 9.8845 kΩ. The nominal value and marked tolerance of the resistor must be confirmed from the component markings or lab materials.
+- **Measured resistance:** 9.8845 kΩ.
+- **Acceptable range and comparison:** If the resistor is rated at 10 kΩ ±5%, its acceptable range is:
+
+  Minimum = 10 × (1 − 0.05) = 9.5 kΩ
+
+  Maximum = 10 × (1 + 0.05) = 10.5 kΩ
+
+  The measured value of 9.8845 kΩ is within this range, provided that the nominal value is 10 kΩ and the tolerance is ±5%.
 
 <img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/bde99774-d2e7-411e-9fca-726a75f80d1e" />
 
 
 ### Task 2. Investigate the photoresistor
 
-- How we reproduced the exposed and covered conditions: The LDR was measured under exposed-light conditions and then covered by a hand to reduce the light reaching its surface.
-- Exposed LDR resistance: 15.14 kΩ.
-- Covered LDR resistance: 82.019 kΩ.
-- How resistance changes with light: The LDR resistance increased when the sensor was covered, indicating that its resistance increased as the incident light intensity decreased.
-- Our prediction for Vout when covering the LDR: We predicted that Vout would increase because the LDR was connected between Vout and GND, while the fixed resistor was connected between the supply and Vout.
+- **How we reproduced the exposed and covered conditions:** The LDR was measured under exposed-light conditions and then covered by a hand to reduce the light reaching its surface.
+- **Exposed LDR resistance:** 15.14 kΩ.
+- **Covered LDR resistance:** 82.019 kΩ.
+- **How resistance changes with light:** The LDR resistance increased when the sensor was covered, indicating that its resistance increased as the incident light intensity decreased.
+- **Our prediction for Vout when covering the LDR:** We predicted that Vout would increase because the LDR was connected between Vout and GND, while the fixed resistor was connected between the supply and Vout.
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/20d527af-c0ba-4486-8cb1-63b7c07baad6" />
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/ce4796de-349d-4ffa-ba94-de8e4350001a" />
 
-**Insert your photo here:** exposed LDR resistance measurement, with a caption identifying the condition and reading.
-
-**Insert your photo here:** covered LDR resistance measurement, with a caption identifying the condition and reading.
 
 ## Part 2: Build the sensor circuit
 
@@ -50,24 +52,38 @@ The measured value of 9.8845 kΩ is within this range, provided that the nominal
 
 ### Task 4. Build a voltage divider
 
-**Insert your photo here:** your own circuit, labelled to identify +5 V, Vout and GND. Add a caption explaining these connections and note any correction made before powering the circuit.
+The voltage divider consists of a fixed resistor connected between the positive supply and Vout, and an LDR connected between Vout and GND.
+The output voltage is measured at the junction between the two resistors relative to GND.
 
 ### Task 5. Measure the output voltage
-
 The voltage-divider equation is:
 
 Vout = Vs × Rphoto / (Rs + Rphoto)
 
 For the calculations below, the nominal supply setting of 5.00 V is used as a calculation assumption, not as a confirmed measured supply voltage. The fixed resistance used is 9.8845 kΩ.
 
-Exposed condition:
+**Exposed condition:**
 
 Vout = 5.00 × 15.14 / (9.8845 + 15.14)
+
 Vout ≈ 3.03 V
-Covered condition:
+
+**Covered condition:**
+
 Vout = 5.00 × 82.019 / (9.8845 + 82.019)
+
 Vout ≈ 4.46 V
 
+| Condition and method | LDR resistance (kΩ) | Calculated output (V) |       Measured output (V) |
+| -------------------- | ------------------: | --------------------: | ------------------------: |
+| Exposed to light     |               15.14 |                3.03\* | 2.1151 or 2.1551 — verify |
+| Covered by hand      |              82.019 |                4.46\* |                      4.45 |
+
+*Calculated using an assumed supply voltage of 5.00 V. Recalculate using the measured supply voltage if it differs from 5.00 V.*
+
+- **Explanation of the observed change in Vout:** Covering the LDR increased its resistance. This increased the fraction of the supply voltage across the LDR and raised Vout.
+- **Comparison of calculated and measured output:** The covered-condition calculated value of approximately 4.46 V is close to the reported measurement of 4.45 V. For the exposed condition, the measured voltage is lower than the calculated value. The discrepancy should be checked against the original multimeter reading, actual supply voltage, resistor identification, and circuit connections.
+- **One limitation:** The calculations assume a fixed supply voltage and use resistance measurements taken separately from the voltage measurements. Changes in illumination, measurement conditions, component tolerances, and connection resistance may contribute to differences between calculated and measured values.
 
 ## Part 3: Observe the signal over time
 
@@ -105,7 +121,5 @@ An important assumption to test is whether the sensor readings are sufficiently 
 
 
 ## Sources and AI use
-
-Sources and AI use
-Source: CECS1011 Lab 1 — SENSE: Giving a System Senses.
-AI use disclosure: ChatGPT was used to help organize the report, improve English wording, explain the voltage-divider equation, and check calculations based on the measurements provided by the team. Numerical values were taken from the supplied measurement photos and results table. Missing measurements were marked as unavailable rather than invented. The team should verify all values against the original lab evidence and confirm that this disclosure complies with the course's AI-use guidelines.
+**Source:** [CECS1011 Lab 1 — SENSE: Giving a System Senses](https://vinuni-cecs1011.github.io/labs/lab-01.html).
+**AI use disclosure:** ChatGPT was used to help organize the report, improve English wording, explain the voltage-divider equation, and check calculations based on the measurements provided by the team. Numerical values were taken from the supplied measurement photos and results table. Missing measurements were marked as unavailable rather than invented. The team should verify all values against the original lab evidence and confirm that this disclosure complies with the course's AI-use guidelines.and results table. Missing measurements were marked as unavailable rather than invented. The team should verify all values against the original lab evidence and confirm that this disclosure complies with the course's AI-use guidelines.
