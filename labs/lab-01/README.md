@@ -86,6 +86,7 @@ Add one row per member. Include physical, paired, analytical and documentation w
 | GitHub username | Work completed and result I can explain | Evidence or report section |
 | minhduc108      | time tracker, sensor circuit assembly   | all tasks were done on time, task 4. build a voltage devider |
 | mixaobo0312 | member, set up the power supply, ensuring the voltage and current limit were correctly configured | Completed assigned tasks on time, task 3. Set up the power supply |
+| ngquann3007-rgb | leader, submit assignments, ensure the workload be done | Complete the deadline ontime, task 7 |
 
 ## Sources and AI use
 
